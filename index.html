@@ -5,114 +5,64 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mayur Taskar | Portfolio</title>
 
-<meta name="description" content="Mayur Taskar - TYBBA Computer Application student, interested in IT, Software Testing and Digital Technology.">
-
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav>
-    <h2 class="logo">Mayur Taskar</h2>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+<div id="progressBar"></div>
 
-        <!-- Resume PDF -->
-        <li>
-            <a href="Mayur_Taskar_Resume_1page.txt" download class="btn">Download Resume</a>
-        </li>
-    </ul>
+<nav>
+<h2 class="logo">Mayur Taskar</h2>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><button id="darkToggle" class="btn">Dark Mode</button></li>
+</ul>
 </nav>
 
-<!-- HEADER -->
 <header>
-    <img src="IMG_20260216_003042.jpg" alt="Mayur Taskar Photo" class="profile">
-
-    <h1>Hello, I'm Mayur Taskar</h1>
-    <p>TYBBA (Computer Application) Student</p>
-
-    <!-- View Resume Button -->
-    <a href="Mayur_Taskar_Resume_1page.txt" target="_blank" class="btn">View Resume</a>
+<img src="IMG_20260216_003042.jpg" class="profile">
+<h1>Hello, I'm Mayur Taskar</h1>
+<p class="typing"></p>
+<a href="Mayur_Taskar_Resume.txt" class="btn">Download Resume</a>
 </header>
 
-<!-- ABOUT -->
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am a motivated TYBBA Computer Application student interested in IT,
-        Software Testing, and Digital Technologies. I enjoy learning new skills
-        and building real-world projects to improve my technical knowledge.
-    </p>
+<section id="about" class="reveal">
+<h2>About Me</h2>
+<p>I am passionate about IT, Software Testing and Web Development.</p>
 </section>
 
-<!-- SKILLS -->
-<section id="skills">
-    <h2>Skills</h2>
-
-    <div class="cards">
-        <div class="card">Computer Basics</div>
-        <div class="card">MS Office</div>
-        <div class="card">HTML</div>
-        <div class="card">CSS</div>
-        <div class="card">Basic Java</div>
-        <div class="card">Software Testing</div>
-        <div class="card">Digital Marketing</div>
-    </div>
+<section id="skills" class="reveal">
+<h2>Skills</h2>
+<div class="cards">
+<div class="card">HTML</div>
+<div class="card">CSS</div>
+<div class="card">Java</div>
+<div class="card">Software Testing</div>
+<div class="card">MS Office</div>
+</div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-    <h2>Projects</h2>
-
-    <div class="project">
-        <h3>Student Record Management System</h3>
-        <p>
-            A system developed to store, update and manage student data
-            efficiently using programming concepts and structured data handling.
-        </p>
-    </div>
+<section id="projects" class="reveal">
+<h2>Projects</h2>
+<div class="project">
+<h3>Student Record Management</h3>
+<p>Manage student data efficiently.</p>
+</div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact">
-    <h2>Contact</h2>
-
-    <p>Email:
-        <a href="mailto:mayurtaskar2005@gmail.com">
-            mayurtaskar2005@gmail.com
-        </a>
-    </p>
-
-    <p>Phone:
-        <a href="tel:7350127853">
-            7350127853
-        </a>
-    </p>
-
-    <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/mayur-taskar-675b7a277" target="_blank">
-            View Profile
-        </a>
-    </p>
-
-    <p>
-        GitHub:
-        <a href="https://github.com/mayurtaskar2005-del" target="_blank">
-            View GitHub
-        </a>
-    </p>
+<section id="contact" class="reveal">
+<h2>Contact</h2>
+<p>Email: mayurtaskar2005@gmail.com</p>
 </section>
 
-<!-- FOOTER -->
 <footer>
-    <p>© <span id="year"></span> Mayur Taskar. All Rights Reserved.</p>
+<p>© <span id="year"></span> Mayur Taskar</p>
 </footer>
 
 <script src="script.js"></script>
 </body>
-      </html>
+</html>
