@@ -1,24 +1,52 @@
-// Auto Footer Year
-document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("year").textContent =
+new Date().getFullYear();
 
 
-// Smooth Scroll for Navbar Links
-document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth"
-        });
-    });
+// SCROLL REVEAL
+function reveal(){
+document.querySelectorAll(".reveal").forEach(el=>{
+if(el.getBoundingClientRect().top < window.innerHeight-100){
+el.classList.add("active");
+}
 });
+}
+window.addEventListener("scroll",reveal);
+reveal();
 
 
-// Simple Navbar Shadow on Scroll
-window.addEventListener("scroll", function() {
-    const nav = document.querySelector("nav");
-    if (window.scrollY > 20) {
-        nav.style.boxShadow = "0 2px 8px rgba(0,0,0,0.2)";
-    } else {
-        nav.style.boxShadow = "none";
-    }
-});
+// TYPING TEXT
+const text=[
+"TYBBA Computer Application Student",
+"Future Software Tester",
+"Web Developer"
+];
+
+let count=0,index=0,current="",letter="";
+
+function type(){
+if(count===text.length) count=0;
+current=text[count];
+letter=current.slice(0,++index);
+document.querySelector(".typing").textContent=letter;
+
+if(letter.length===current.length){
+count++;
+index=0;
+setTimeout(type,1200);
+}else setTimeout(type,60);
+}
+type();
+
+
+// DARK MODE
+document.getElementById("darkToggle").onclick=()=>{
+document.body.classList.toggle("dark");
+};
+
+
+// SCROLL PROGRESS
+window.onscroll=()=>{
+let winScroll=document.documentElement.scrollTop;
+let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+document.getElementById("progressBar").style.width=(winScroll/height)*100+"%";
+};
