@@ -1,3 +1,9 @@
+/* FULL WEBSITE BACKGROUND IMAGE */
+.bg-image{
+    background: url("hands-of-an-unrecognizable-woman-typing-on-a-laptop.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
 flex-wrap:wrap;  
 justify-content:center;  
 gap:18px;  
@@ -20,7 +26,13 @@ header{
     text-align:center;
     padding:60px 20px;
 }
-
+header,
+section,
+.card,
+.project{
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(6px);
+}
 /* PROFILE PHOTO */
 header img{
     width:180px;        /* photo size control */
