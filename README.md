@@ -37,9 +37,7 @@ A simple project to manage student data efficiently using programming concepts a
 - 📧 Email: **mayurtaskar2005@gmail.com**  
 - 📱 Phone: **7350127853**  
 - 🔗 LinkedIn: https://www.linkedin.com/in/mayur-taskar-675b7a277  
-- 💻 GitHub: https://github.com/mayurtaskar2005-del  
-
----
+- 💻 GitHub: https://mayurtaskar2005-del.github.io/My-portfolio-/
 
 ## 📄 Resume
 
