@@ -48,7 +48,7 @@ setTimeout(type,100);
 }
 type();
 
-// Dark Mode Toggle
+// Dark Mode
 document.getElementById("mode-toggle").onclick=function(){
 document.body.classList.toggle("light");
 };
