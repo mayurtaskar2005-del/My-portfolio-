@@ -1,131 +1,72 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    scroll-behavior:smooth;
+/* DARK MODE */
+body.light{
+    background:#f4f4f4;
+    color:black;
 }
 
-body{
-    font-family:'Poppins', sans-serif;
-    background:url("hands-of-an-unrecognizable-woman-typing-on-a-laptop.jpg") center/cover fixed;
-    color:white;
+body.light nav{
+    background:white;
 }
 
-/* NAVBAR */
-nav{
-    position:fixed;
-    top:0;
-    width:100%;
-    padding:15px 50px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background:rgba(0,0,0,0.6);
-    backdrop-filter:blur(8px);
-    z-index:1000;
+body.light section{
+    background:white;
+    color:black;
 }
 
-nav ul{
-    list-style:none;
-    display:flex;
-    gap:25px;
-}
-
-nav a{
-    text-decoration:none;
-    color:white;
-    font-weight:500;
-    transition:0.3s;
-}
-
-nav a:hover{
+/* TYPING */
+.typing{
+    margin-top:10px;
+    font-weight:300;
     color:#00f0ff;
 }
 
-/* HERO */
-header{
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding-top:80px;
+/* HAMBURGER */
+.menu-toggle{
+    display:none;
+    font-size:25px;
+    cursor:pointer;
 }
 
-header h1{
-    font-size:40px;
+@media(max-width:768px){
+    #nav-links{
+        display:none;
+        flex-direction:column;
+        background:black;
+        position:absolute;
+        top:60px;
+        right:0;
+        width:200px;
+        padding:20px;
+    }
+    #nav-links.active{
+        display:flex;
+    }
+    .menu-toggle{
+        display:block;
+    }
 }
 
-header h1 span{
-    color:#00f0ff;
-}
-
-.btn{
-    margin-top:20px;
-    padding:12px 30px;
+/* PROJECT CARD */
+.project-card{
+    padding:20px;
     background:#00f0ff;
     color:black;
-    text-decoration:none;
-    border-radius:30px;
-    font-weight:600;
+    border-radius:15px;
     transition:0.3s;
 }
 
-.btn:hover{
-    background:white;
+.project-card:hover{
     transform:scale(1.05);
 }
 
-/* PROFILE IMAGE */
-.hero-img{
-    width:180px;
-    height:180px;
-    margin-bottom:20px;
-    position:relative;
+/* SOCIAL LINKS */
+.socials{
+    margin-top:15px;
 }
 
-.hero-img img{
-    width:100%;
-    height:100%;
-    border-radius:50%;
-    object-fit:cover;
-    border:5px solid white;
-}
-
-/* GLASS SECTIONS */
-section{
-    max-width:900px;
-    margin:80px auto;
-    padding:40px;
-    border-radius:20px;
-    background:rgba(0,0,0,0.6);
-    backdrop-filter:blur(10px);
-}
-
-/* SKILL CARDS */
-.cards{
-    display:flex;
-    flex-wrap:wrap;
-    gap:15px;
-}
-
-.card{
-    padding:15px 25px;
-    background:#00f0ff;
-    color:black;
-    border-radius:20px;
+.socials a{
+    margin-right:15px;
+    color:#00f0ff;
+    text-decoration:none;
     font-weight:600;
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-}
-
-/* FOOTER */
-footer{
-    text-align:center;
-    padding:20px;
-    background:rgba(0,0,0,0.7);
 }
