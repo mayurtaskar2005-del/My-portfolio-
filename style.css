@@ -1,4 +1,114 @@
-/* HERO BUTTONS */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins', sans-serif;
+background:url("hands-of-an-unrecognizable-woman-typing-on-a-laptop.jpg") center/cover no-repeat fixed;
+color:white;
+}
+
+/* NAVBAR */
+nav{
+position:fixed;
+width:100%;
+top:0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(8px);
+z-index:1000;
+}
+
+nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#00f0ff;
+}
+
+.menu-toggle{
+display:none;
+font-size:24px;
+cursor:pointer;
+}
+
+@media(max-width:768px){
+nav ul{
+display:none;
+flex-direction:column;
+position:absolute;
+top:60px;
+right:0;
+background:black;
+padding:20px;
+}
+nav ul.active{
+display:flex;
+}
+.menu-toggle{
+display:block;
+}
+}
+
+/* HERO */
+header{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding-top:80px;
+}
+
+.hero-img{
+width:160px;
+height:160px;
+margin:20px auto;
+}
+
+.hero-img img{
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:50%;
+border:4px solid white;
+}
+
+header span{
+color:#00f0ff;
+}
+
+.btn{
+padding:10px 25px;
+background:#00f0ff;
+color:black;
+border-radius:25px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+background:white;
+}
+
 .hero-buttons{
 margin-top:20px;
 display:flex;
@@ -18,7 +128,17 @@ background:#00f0ff;
 color:black;
 }
 
-/* SKILLS PROGRESS */
+/* GLASS SECTIONS */
+.glass{
+max-width:900px;
+margin:80px auto;
+padding:40px;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+border-radius:20px;
+}
+
+/* SKILLS */
 .skill{
 margin:20px 0;
 }
@@ -42,7 +162,7 @@ animation:load 2s ease-in-out;
 from{width:0;}
 }
 
-/* PROJECT CARD 3D */
+/* PROJECT */
 .project-card{
 padding:25px;
 background:#00f0ff;
@@ -52,10 +172,10 @@ transition:0.4s;
 }
 
 .project-card:hover{
-transform:scale(1.05) rotateY(5deg);
+transform:scale(1.05);
 }
 
-/* CONTACT FORM */
+/* CONTACT */
 .contact-form{
 display:flex;
 flex-direction:column;
@@ -76,7 +196,6 @@ height:100px;
 resize:none;
 }
 
-/* SOCIALS */
 .socials{
 margin-top:20px;
 }
@@ -85,5 +204,26 @@ margin-top:20px;
 margin-right:15px;
 color:#00f0ff;
 text-decoration:none;
-font-weight:600;
 }
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:20px;
+background:rgba(0,0,0,0.7);
+}
+
+/* DARK MODE */
+body.light{
+background:#f4f4f4;
+color:black;
+}
+
+body.light nav{
+background:white;
+}
+
+body.light .glass{
+background:white;
+color:black;
+  }
