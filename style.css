@@ -1,127 +1,48 @@
-/* FULL PAGE BG */
-body{
+*{
     margin:0;
-    font-family:Arial, sans-serif;
-    background:url("hands-of-an-unrecognizable-woman-typing-on-a-laptop.jpg") center/cover fixed;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
-/* DARK OVERLAY (important) */
-body::before{
-    content:"";
+body{
+    font-family:'Poppins', sans-serif;
+    background:url("hands-of-an-unrecognizable-woman-typing-on-a-laptop.jpg") center/cover fixed;
+    color:white;
+}
+
+/* NAVBAR */
+nav{
     position:fixed;
     top:0;
-    left:0;
     width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.55);
-    backdrop-filter:blur(6px);
-    z-index:-1;
-}
-
-/* HERO FULL SCREEN */
-header{
-    min-height:100vh;
+    padding:15px 50px;
     display:flex;
-    flex-direction:column;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
-    text-align:center;
-    color:white;
-}
-
-/* CONTENT SECTIONS */
-section{
-    max-width:900px;
-    margin:80px auto;
-    padding:40px;
-    border-radius:16px;
-    
-    background:rgba(255,255,255,0.08);
-    backdrop-filter:blur(12px);
-    border:1px solid rgba(255,255,255,0.2);
-    
-    color:white;
-}
-
-/* FOOTER FIX */
-footer{
-    text-align:center;
-    padding:20px;
-    background:rgba(0,0,0,0.7);
-    color:white;
-}
-/* FULL WEBSITE BACKGROUND */
-body{
-    background:url("hands-of-an-unrecognizable-woman-typing-on-a-laptop.jpg") center/cover no-repeat fixed;
-}
-
-
-/* HERO SECTION FULL HEIGHT */
-header{
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    color:white;
-    background:rgba(0,0,0,0.55);
-    backdrop-filter:blur(6px);
-}
-
-
-/* NORMAL SECTIONS GLASS STYLE */
-section{
-    max-width:900px;
-    margin:60px auto;
-    padding:40px;
-    border-radius:20px;
-
-    background:rgba(255,255,255,0.85);
-    backdrop-filter:blur(10px);
-
-    box-shadow:0 20px 50px rgba(0,0,0,0.15);
-}
-
-
-/* FOOTER DARK GLASS */
-footer{
-    background:rgba(0,0,0,0.7);
+    background:rgba(0,0,0,0.6);
     backdrop-filter:blur(8px);
-}
-.hero-img{
-    position: relative;
-    width: 180px;
-    height: 180px;
-    margin: auto;
+    z-index:1000;
 }
 
-.hero-img img{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-    position: relative;
-    z-index: 2;
-    border: 4px solid white;
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
 }
 
-/* ROTATING GLOW RING */
-.hero-img::before{
-    content: "";
-    position: absolute;
-    top: -8px;
-    left: -8px;
-    width: calc(100% + 16px);
-    height: calc(100% + 16px);
-    border-radius: 50%;
-    background: linear-gradient(45deg,#00f2ff,#4f46e5,#00f2ff);
-    z-index: 1;
-    animation: rotateRing 4s linear infinite;
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:0.3s;
 }
 
-/* inner dark layer */
-./* HERO SECTION CENTER */
+nav a:hover{
+    color:#00f0ff;
+}
+
+/* HERO */
 header{
     min-height:100vh;
     display:flex;
@@ -129,30 +50,41 @@ header{
     justify-content:center;
     align-items:center;
     text-align:center;
-    position:relative;
-    z-index:1;
+    padding-top:80px;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header h1 span{
+    color:#00f0ff;
+}
+
+.btn{
+    margin-top:20px;
+    padding:12px 30px;
+    background:#00f0ff;
+    color:black;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+    transform:scale(1.05);
 }
 
 /* PROFILE IMAGE */
 .hero-img{
-    position:relative;
     width:180px;
     height:180px;
     margin-bottom:20px;
+    position:relative;
 }
 
-/* ROTATING RING */
-.hero-img::before{
-    content:"";
-    position:absolute;
-    inset:-8px;
-    border-radius:50%;
-    background:linear-gradient(45deg,#00f0ff,#0066ff,#00f0ff);
-    z-index:-1;
-    animation:spin 4s linear infinite;
-}
-
-/* IMAGE STYLE */
 .hero-img img{
     width:100%;
     height:100%;
@@ -161,8 +93,39 @@ header{
     border:5px solid white;
 }
 
-/* ANIMATION */
-@keyframes spin{
-    0%{transform:rotate(0deg);}
-    100%{transform:rotate(360deg);}
+/* GLASS SECTIONS */
+section{
+    max-width:900px;
+    margin:80px auto;
+    padding:40px;
+    border-radius:20px;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(10px);
+}
+
+/* SKILL CARDS */
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.card{
+    padding:15px 25px;
+    background:#00f0ff;
+    color:black;
+    border-radius:20px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.7);
 }
