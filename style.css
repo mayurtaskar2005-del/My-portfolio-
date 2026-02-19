@@ -7,9 +7,14 @@ scroll-behavior:smooth;
 
 body{
 font-family:'Poppins', sans-serif;
-background:url("hands-of-an-unrecognizable-woman-typing-on-a-laptop.jpg") center/cover no-repeat fixed;
+background-image:url("hands-of-an-unrecognizable-woman-typing-on-a-laptop.jpg");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+background-repeat:no-repeat;
 color:white;
 }
+
 
 /* NAVBAR */
 nav{
