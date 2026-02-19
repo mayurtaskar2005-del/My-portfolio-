@@ -18,7 +18,7 @@ sec.style.transition="1s";
 });
 
 // Typing Effect
-const text = ["Web Developer", "Software Testing Learner", "IT Enthusiast"];
+const text = ["Web Developer, python learner"];
 let i=0;
 let j=0;
 let currentText="";
