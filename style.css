@@ -50,3 +50,42 @@ footer{
     background:rgba(0,0,0,0.7);
     color:white;
 }
+/* FULL WEBSITE BACKGROUND */
+body{
+    background:url("hands-of-an-unrecognizable-woman-typing-on-a-laptop.jpg") center/cover no-repeat fixed;
+}
+
+
+/* HERO SECTION FULL HEIGHT */
+header{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    background:rgba(0,0,0,0.55);
+    backdrop-filter:blur(6px);
+}
+
+
+/* NORMAL SECTIONS GLASS STYLE */
+section{
+    max-width:900px;
+    margin:60px auto;
+    padding:40px;
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.85);
+    backdrop-filter:blur(10px);
+
+    box-shadow:0 20px 50px rgba(0,0,0,0.15);
+}
+
+
+/* FOOTER DARK GLASS */
+footer{
+    background:rgba(0,0,0,0.7);
+    backdrop-filter:blur(8px);
+}
