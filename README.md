@@ -1,50 +1,80 @@
-# 🌐 Mayur Taskar Portfolio
+# 🌐 Mayur Taskar - Portfolio Website
 
-Welcome to my personal portfolio website.  
-I am a TYBBA (Computer Application) student interested in IT, Software Testing, and Digital Technology.
+This is my personal portfolio website built using HTML, CSS, and JavaScript.  
+It showcases my skills, projects, and contact information.
 
----
-
-## 👨‍💻 About Me
-
-- 🎓 TYBBA (Computer Application) Student  
-- 💻 Interested in IT & Software Testing  
-- 📚 Always learning new technologies  
-- 🛠 Building real-world projects  
+🚀 Live Website:  
+https://mayurtaskar2005-del.github.io/My-portfolio-/
 
 ---
 
-## 🚀 Skills
+## 📌 About Me
 
-- Computer Basics  
-- MS Office  
-- HTML & CSS  
-- Basic Java  
-- Software Testing  
-- Digital Marketing  
+I am a motivated and enthusiastic IT fresher with basic knowledge of:
 
----
+- Python
+- HTML
+- CSS
+- MySQL
+- C Programming
 
-## 📂 Projects
-
-### Student Record Management System
-A simple project to manage student data efficiently using programming concepts and structured data handling.
+I built this portfolio to improve my practical web development skills and to showcase my projects.
 
 ---
 
-## 📞 Contact
+## 🛠️ Technologies Used
 
-- 📧 Email: **mayurtaskar2005@gmail.com**  
-- 📱 Phone: **7350127853**  
-- 🔗 LinkedIn: https://www.linkedin.com/in/mayur-taskar-675b7a277  
-- 💻 GitHub: https://mayurtaskar2005-del.github.io/My-portfolio-/
-
-## 📄 Resume
-
-You can download my resume from the portfolio website or from this repository.
+- HTML5
+- CSS3
+- JavaScript
+- Font Awesome (Icons)
+- Google Fonts
+- GitHub Pages (Deployment)
 
 ---
 
-## 🌍 Live Website (GitHub Pages)
+## ✨ Features
 
-After enabling GitHub Pages, your site will be live at:
+- Responsive Design
+- Dark / Light Mode Toggle
+- Typing Animation Effect
+- Scroll Arrow Animation
+- Download Resume Button
+- Project Section with Live Demo
+- Contact Form UI
+- Social Media Links
+
+---
+
+## 📂 Project Structure
+---
+
+## 📌 Projects Included
+
+### 1️⃣ Student Record Management
+A basic system to manage student data using Python and MySQL.
+
+### 2️⃣ Personal Portfolio Website
+Built a responsive portfolio website with animations and deployed it using GitHub Pages.
+
+---
+
+## 📬 Contact
+
+- LinkedIn: https://www.linkedin.com/in/mayur-taskar-675b7a277
+- GitHub: https://github.com/mayurtaskar2005-del
+
+---
+
+## 🎯 Future Improvements
+
+- Add backend functionality
+- Improve UI animations
+- Add real working contact form
+- More projects
+
+---
+
+## 📄 License
+
+This project is open for learning and personal use.
