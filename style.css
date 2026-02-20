@@ -215,8 +215,13 @@ text-decoration:none;
     margin: 40px 0;
 }
 
+.rating-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
 .stars {
-    font-size: 35px;
+    font-size: 28px;
     cursor: pointer;
 }
 
@@ -227,6 +232,16 @@ text-decoration:none;
 
 .star.active {
     color: gold;
+}
+
+#reset-rating {
+    margin-top: 15px;
+    padding: 8px 15px;
+    border: none;
+    background: crimson;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 /* FOOTER */
