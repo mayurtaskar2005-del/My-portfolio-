@@ -59,24 +59,28 @@ document.getElementById("nav-links").classList.toggle("active");
 };
 const stars = document.querySelectorAll(".star");
 const message = document.getElementById("rating-message");
+const resetBtn = document.getElementById("reset-rating");
 
 let ratings = JSON.parse(localStorage.getItem("ratings")) || [];
 
 function updateAverage() {
-    if (ratings.length === 0) return;
+    if (ratings.length === 0) {
+        message.textContent = "No ratings yet.";
+        return;
+    }
 
     let total = ratings.reduce((a, b) => a + b, 0);
     let average = (total / ratings.length).toFixed(1);
 
-    message.textContent = 
-        "⭐ Average Rating: " + average + 
+    message.textContent =
+        "⭐ Average Rating: " + average +
         " (" + ratings.length + " reviews)";
 }
 
 updateAverage();
 
 stars.forEach(star => {
-    star.addEventListener("click", function() {
+    star.addEventListener("click", function () {
         let rating = Number(this.getAttribute("data-value"));
 
         ratings.push(rating);
@@ -84,10 +88,19 @@ stars.forEach(star => {
 
         stars.forEach(s => s.classList.remove("active"));
 
-        for (let i = 0; i < rating; i++) {
-            stars[i].classList.add("active");
-        }
+        stars.forEach(s => {
+            if (Number(s.getAttribute("data-value")) <= rating) {
+                s.classList.add("active");
+            }
+        });
 
         updateAverage();
     });
+});
+
+resetBtn.addEventListener("click", function () {
+    localStorage.removeItem("ratings");
+    ratings = [];
+    stars.forEach(s => s.classList.remove("active"));
+    updateAverage();
 });
