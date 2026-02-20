@@ -210,6 +210,24 @@ margin-right:15px;
 color:#00f0ff;
 text-decoration:none;
 }
+.rating-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.stars {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.star {
+    color: gray;
+    transition: 0.3s;
+}
+
+.star.active {
+    color: gold;
+}
 
 /* FOOTER */
 footer{
