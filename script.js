@@ -57,3 +57,19 @@ document.body.classList.toggle("light");
 document.getElementById("menu-toggle").onclick=function(){
 document.getElementById("nav-links").classList.toggle("active");
 };
+const stars = document.querySelectorAll(".star");
+const message = document.getElementById("rating-message");
+
+stars.forEach(star => {
+    star.addEventListener("click", function() {
+        let rating = this.getAttribute("data-value");
+
+        stars.forEach(s => s.classList.remove("active"));
+
+        for (let i = 0; i < rating; i++) {
+            stars[i].classList.add("active");
+        }
+
+        message.textContent = "Thank you for rating " + rating + " ⭐!";
+    });
+});
