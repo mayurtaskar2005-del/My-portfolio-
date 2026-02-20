@@ -60,9 +60,27 @@ document.getElementById("nav-links").classList.toggle("active");
 const stars = document.querySelectorAll(".star");
 const message = document.getElementById("rating-message");
 
+let ratings = JSON.parse(localStorage.getItem("ratings")) || [];
+
+function updateAverage() {
+    if (ratings.length === 0) return;
+
+    let total = ratings.reduce((a, b) => a + b, 0);
+    let average = (total / ratings.length).toFixed(1);
+
+    message.textContent = 
+        "⭐ Average Rating: " + average + 
+        " (" + ratings.length + " reviews)";
+}
+
+updateAverage();
+
 stars.forEach(star => {
     star.addEventListener("click", function() {
-        let rating = this.getAttribute("data-value");
+        let rating = Number(this.getAttribute("data-value"));
+
+        ratings.push(rating);
+        localStorage.setItem("ratings", JSON.stringify(ratings));
 
         stars.forEach(s => s.classList.remove("active"));
 
@@ -70,6 +88,6 @@ stars.forEach(star => {
             stars[i].classList.add("active");
         }
 
-        message.textContent = "Thank you for rating " + rating + " ⭐!";
+        updateAverage();
     });
 });
