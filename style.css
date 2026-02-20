@@ -299,3 +299,41 @@ header {
         transform: rotate(45deg) translate(5px, 5px);
     }
 }
+.profile-wrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    border: 5px solid #111;
+}
+
+.fire-ring {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background: conic-gradient(
+        red,
+        orange,
+        yellow,
+        red
+    );
+    animation: rotateFire 2s linear infinite;
+    filter: blur(15px);
+    z-index: 1;
+}
+
+@keyframes rotateFire {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
